@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-compatible" content="IE-Edge" />
+    <meta name="viewport" content="width=devic-width, initial-scale=1.0" />
+    <title>detail CryptoView</title>
+    <link rel="stylesheet" href="details.css" />
+    <script src="https://kit.fontawesome.com/dc98e227bd.js" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+    <!--navugation bar-->
+    <nav class="flex_container">
+      <div class="flex_container">
+        <a href="index.html">
+      <img src="./chainlink(1).png" alt="logo" class="logo">
+    </a>
+      <h1>cryptocurrency</h1>
+  </div>
+      <a href="./search.html" class="anchor_btn">search</a>
+  </nav>
+
+    <!--description  and price -->
+    <section class="description_price flex_container">
+      <!--description-->
+      <div class="description flex_container">
+        <img src="" id="coin_img" alt="" />
+        <h1 id="coin_name"></h1>
+        <div class="w_40">
+          <p class="text_justify" id="text"></p>
+        </div>
+      </div>
+
+      <!--price-->
+      <div class="price">
+       
+      
+      <table class="mt_1_25">
+        <tbody>
+            <h1>price table</h1>
+          <tr>
+            <td>INR</td>
+            <td><span id="inr_price"></span></td>
+          </tr>
+          <tr>
+            <td>USD</td>
+            <td><span id="usd_price"></span></td>
+          </tr>
+          <tr>
+            <td>EUR</td>
+            <td><span id="eur_price"></span></td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </section>
+
+    <!--chart-->
+    <section class="historical  mt_2">
+      <canvas id="myChart" ></canvas>
+    </section>
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+
+   
+    <script src="details.js"></script>
+     <!--footer-->
+  <footer>
+    <i class="fa-brands fa-facebook"></i>
+    &emsp;
+    <i class="fa-brands fa-instagram"></i>
+    &emsp;
+    <i class="fa-brands fa-twitter"></i>
+    &emsp;
+    <i class="fa-brands fa-linkedin"></i>
+    &emsp;
+    <i class="fa-brands fa-telegram"></i>
+
+    <h3>Copyright&copy; Md ISMAIL &amp; squad</h3>
+</footer>
+  </body>
+</html>

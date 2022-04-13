@@ -1,0 +1,85 @@
+body {
+    margin: 0px;
+    background-color: #efefef;
+    }
+
+.flex_container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.description_price{
+    justify-content: space-around;
+}
+.description{
+    align-items: flex-start;
+    gap: 2rem;
+}
+.description > img{
+    width: 10rem;
+}
+.w_40{
+    width: 40vw;
+}
+.text_justify{
+    text-align: justify;
+}
+.mt_1_25{
+    margin-top: 1.25rem;
+}
+.mt_2{
+    margin-top: 2rem;
+}
+.historical{
+    position: relative;
+    height : 15rem;
+    width: 50vw;
+    margin: auto;
+}
+
+.logo{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+nav>h1{
+    display: inline;
+}
+nav > button{
+justify-content: flex-end;
+
+}
+
+nav > div{
+align-items: center;
+}
+
+.anchor_btn{
+    border: 1px solid gray;
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s all;
+    color: black;
+}
+
+.anchor_btn:hover{
+    background-color: grey;
+    color: white;
+}
+nav{
+    height: 3rem;
+    padding: 0.25rem 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer{
+    text-align: center;
+    padding: 1.5rem;
+    font-family: 'Nunito', sans-serif;
+    padding-top: 12rem;
+  
+}
+footer > h3{
+    padding-top: 0.5rem;
+}

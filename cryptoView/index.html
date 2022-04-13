@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CryptoView</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@100&family=Ubuntu:wght@300;400&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/dc98e227bd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--Navigation bar--->
+    <nav class="flex_container">
+        <div class="flex_container">
+            <a href="./search.html">
+        <img src="./chainlink(1).png" alt="logo" class="logo"> </a>
+        <h1>Cryptocurrency</h1>
+    </div>
+        <a href="search.html" class="anchor_btn">search</a>
+    </nav>
+
+    <!-- Main section containing main heading and image-->
+    <section class="main flex_container">
+        <h1>Welcome - <br>
+            Digital world buy and <br> sell the coins in easy way</h1>
+        <img src="./main_img.png"
+            alt="main img" />
+    </section>
+
+    <!--second section containing top 4/5 coin information-->
+    <section class="trending_coin">
+       <div class="scroll flex_container">
+        <div class="card">
+            <img src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png" alt="bch"
+                class="left">
+            <div class="right ML">
+                <h3>BITCOIN</h3>
+                <p>$<span id="bitcoin_price"></span></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://assets.coingecko.com/coins/images/279/large/ethereum.png" alt="shib" class="left">
+            <div class="right ML">
+                <h3>ETHEREUM</h3>
+                <p>$<span id="ethereum_price"></span></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://assets.coingecko.com/coins/images/325/large/Tether-logo.png" alt="btc" class="left">
+            <div class="right ML">
+                <h3>TETHER</h3>
+                <p>$<span id="tether_price"></span></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://assets.coingecko.com/coins/images/4128/large/solana.png" alt="usdc"
+                class="left">
+            <div class="right ML">
+                <h3>SOLANA</h3>
+                <p>$<span id="solana_price"></span></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://assets.coingecko.com/coins/images/9576/large/BUSD.png" alt="eth"
+                class="left">
+            <div class="right ML">
+                <h3>BINANCECOIN</h3>
+                <p>$<span id="binancecoin_price"></span></p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://assets.coingecko.com/coins/images/975/large/cardano.png" alt="eth"
+                class="left">
+            <div class="right ML">
+                <h3>CARDANO</h3>
+                <p>$<span id="cardano_price"></span></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://assets.coingecko.com/coins/images/1167/large/VeChain-Logo-768x725.png" alt="eth"
+                class="left">
+            <div class="right ML">
+                <h3>VECHAIN</h3>
+                <p>$<span id="vechain_price"></span></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://assets.coingecko.com/coins/images/12817/large/filecoin.png" alt="eth"
+                class="left">
+            <div class="right ML">
+                <h3>FILECOIN</h3>
+                <p>$<span id="filecoin_price"></span></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://assets.coingecko.com/coins/images/69/large/monero_logo.png" alt="eth"
+                class="left">
+            <div class="right ML">
+                <h3>MONERO</h3>
+                <p>$<span id="monero_price"></span></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://assets.coingecko.com/coins/images/4001/large/Fantom.png" alt="eth"
+                class="left">
+            <div class="right ML">
+                <h3>FANTOM</h3>
+                <p>$<span id="fantom_price"></span></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://assets.coingecko.com/coins/images/24383/large/apecoin.jpg" alt="eth"
+                class="left">
+            <div class="right ML">
+                <h3>APECOIN</h3>
+                <p>$<span id="apecoin_price"></span></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://assets.coingecko.com/coins/images/425/large/waves.png" alt="eth"
+                class="left">
+            <div class="right ML">
+                <h3>WAVES</h3>
+                <p>$<span id="waves_price"></span></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://assets.coingecko.com/coins/images/12171/large/polkadot.png" alt="eth"
+                class="left">
+            <div class="right ML">
+                <h3>POLKADOT</h3>
+                <p>$<span id="polkadot_price"></span></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://assets.coingecko.com/coins/images/5/large/dogecoin.png" alt="eth"
+                class="left">
+            <div class="right ML">
+                <h3>DOGECOIN</h3>
+                <p>$<span id="dogecoin_price"></span></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://assets.coingecko.com/coins/images/12681/large/UST.png" alt="eth"
+                class="left">
+            <div class="right ML">
+                <h3>TERRAUSD</h3>
+                <p>$<span id="terrausd_price"></span></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://assets.coingecko.com/coins/images/7310/large/oCw2s3GI_400x400.jpeg" alt="eth"
+                class="left">
+            <div class="right ML">
+                <h3>CRONOS</h3>
+                <p>$<span id="cronos_price"></span></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://assets.coingecko.com/coins/images/9956/large/4943.png" alt="eth"
+                class="left">
+            <div class="right ML">
+                <h3>DAI</h3>
+                <p>$<span id="dai_price"></span></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://assets.coingecko.com/coins/images/1094/large/tron-logo.png" alt="eth"
+                class="left">
+            <div class="right ML">
+                <h3>TRON</h3>
+                <p>$<span id="tron_price"></span></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://assets.coingecko.com/coins/images/4380/large/download.png" alt="eth"
+                class="left">
+            <div class="right ML">
+                <h3>ALGORAND</h3>
+                <p>$<span id="algorand_price"></span></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://assets.coingecko.com/coins/images/100/large/Stellar_symbol_black_RGB.png" alt="eth"
+                class="left">
+            <div class="right ML">
+                <h3>STELLAR</h3>
+                <p>$<span id="stellar_price"></span></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://assets.coingecko.com/coins/images/4463/large/WeChat_Image_20220118095654.png" alt="eth"
+                class="left">
+            <div class="right ML">
+                <h3>OKB</h3>
+                <p>$<span id="okb_price"></span></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png" alt="eth"
+                class="left">
+            <div class="right ML">
+                <h3>UNISWAP</h3>
+                <p>$<span id="uniswap_price"></span></p>
+            </div>
+        </div>
+       </div>
+
+
+    </section>
+
+
+    <!--third section containing the main feature of the website-->
+    <section class="features flex_container">
+        <div class="card">
+            <h1>Free</h1>
+            <p>This is a completely free to use Website. We do not show any ads or we do not have any paid membership.
+            </p>
+        </div>
+        <div class="card">
+            <h1>Historical data</h1>
+            <p>We show graphical representation of historical data of the Cryptocurrencies. The graphs can be selected
+                from 24 hours upto 1 year.
+            </p>
+        </div>
+        <div class="card">
+            <h1>100+ coins</h1>
+            <p>We show the data of many popular Cryptocurrencies and even have a search functionality for a smoother
+                User Experience.
+            </p>
+        </div>
+    </section>
+
+    <!--this is the footer containing copyright, created by etc.-->
+    <footer>
+        <i class="fa-brands fa-facebook"></i>
+        &emsp;
+        <i class="fa-brands fa-instagram"></i>
+        &emsp;
+        <i class="fa-brands fa-twitter"></i>
+        &emsp;
+        <i class="fa-brands fa-linkedin"></i>
+        &emsp;
+        <i class="fa-brands fa-telegram"></i>
+
+        <h3>Copyright&copy; Md ISMAIL &amp; squad</h3>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+
+</html>
+
+<!---https://coolors.co/palette/edf2fb-e2eafc-d7e3fc-ccdbfd-c1d3fe-b6ccfe-abc4ff-->

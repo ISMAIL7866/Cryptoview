@@ -1,0 +1,164 @@
+body {
+margin: 0px;
+
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0px;
+}
+
+nav{
+    height: 3rem;
+    background-color:rgb(123, 123, 238);
+    padding: 0.25rem 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    
+}
+
+.flex_container{
+    display: flex;
+    
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.main{
+    padding: 5rem;
+    justify-content: space-around;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: x-large;
+    align-items: center;
+}
+
+.main > img{
+    width: 40%;
+}
+.trending_coin{
+    background-color: #CCDBFD;
+    padding: 2rem;
+    overflow-x: hidden;
+  
+}
+.trending_coin > .scroll{
+    font-family: 'Nunito', sans-serif;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    position: relative;
+    animation-name: smooth;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background-color: transparent;
+}
+
+.trending_coin  .card{
+    margin: 0px 5vw;
+padding: 0.5rem 2rem;
+width: 8rem;
+flex-shrink: 0;
+box-shadow: 10px 10px 3px;
+}
+
+.trending_coin .card > img{
+    width: 1.5rem;
+    padding-top: 0.5rem;
+}
+
+.right{
+float: right;
+}
+.left{
+    float: left;
+}
+.ML{
+    margin-left: 1rem;
+}
+.features {
+    font-family: 'Nunito', sans-serif;
+    padding: 2rem;
+    background-color: #ABC4FF;
+    justify-content: space-around;
+}
+
+.features > .card{
+text-align: center;
+padding: 1rem;
+width: 25vw;
+box-shadow: 1px 10px 10px;
+
+}
+
+.card{
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: white;
+}
+footer{
+    text-align: center;
+    padding: 1.5rem;
+    font-family: 'Nunito', sans-serif;
+   
+}
+footer > h3{
+    padding-top: 0.5rem;
+}
+
+@keyframes smooth{
+    from{
+        left: 0%;
+    }
+    to{
+        left: -450%;
+    }
+}
+.logo{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+nav>h1{
+    display: inline;
+}
+nav > button{
+justify-content: flex-end;
+
+}
+
+nav > div{
+align-items: center;
+}
+
+.anchor_btn{
+    border: 1px solid gray;
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s all;
+    color: black;
+}
+
+.anchor_btn:hover{
+    background-color: grey;
+    color: white;
+}
+
+@media screen and (max-width :500px) {
+    nav h1{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:850px){
+   .main img{
+       width: 60vw;
+   }
+    .features{
+      align-content: stretch;
+        flex-direction: column;
+ 
+    }
+    .features > card{
+        width: initial;
+    }
+}
